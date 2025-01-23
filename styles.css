@@ -1,0 +1,72 @@
+/* پایه و اصول طراحی */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* سرصفحه */
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* بخش‌ها */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* لینک‌ها */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* فوتر */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    margin-top: 20px;
+}
