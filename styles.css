@@ -88,7 +88,7 @@ section h2 {
 .article section{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding:12px;
 }
 
