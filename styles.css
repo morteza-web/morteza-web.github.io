@@ -71,6 +71,7 @@ section h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .skills div{
@@ -87,6 +88,7 @@ section h2 {
 .article section{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding:12px;
 }
 
