@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    
     margin: 0;
     padding: 0;
     background-color:rgb(124, 124, 124);
@@ -16,10 +17,19 @@ body {
 
 /* Header */
 
+/* main */
+
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 /* Section Styling */
 .section {
     padding: 5rem 1.5rem;
     margin: 50px;
+    width: 90%;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -34,6 +44,7 @@ section h2 {
     margin-bottom: 20px;
 }
 
+/* first sec */
 .prof-pic{
     width: 150px;
     height: 150px;
@@ -66,12 +77,16 @@ section h2 {
     
 }
 
+/* second sec */
+
 .skills{
     padding: auto 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    column-gap: 10%;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skills div{
@@ -79,17 +94,22 @@ section h2 {
     display: inline;
 }
 
+/* third sec */
+
 .article{
     display: flex;
     flex-direction: column;
-    
+        
 }
 
 .article section{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     flex-wrap: nowrap;
-    padding:12px;
+    padding: 20% 0;
+    height: max-content;
 }
 
 .service{
@@ -97,8 +117,10 @@ section h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 22.5%;
     
-    gap: 20%;
+    column-gap: 20%;
 }
 
 .service span{
@@ -109,7 +131,7 @@ section h2 {
 
 
 
-/* Contact Section */
+/* forth Sec */
 .contact{
     display: flex;
     flex-direction: column;
@@ -122,11 +144,13 @@ section h2 {
 .contact a:link, a:visited{
     color: rgb(52, 52, 52);
     /* padding: 14px 25px; */
-    /* margin:0.5rem 10px 0.5rem 10px ; */
+    margin:0.1rem ;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    
 }
+
 .contact p{
     margin:20px;
     font-size: 2rem;
@@ -141,7 +165,7 @@ section h2 {
 
 }
 
-/* Footer */
+/* forth sec  >>  Footer */
 .footer {
     /* text-align: center; */
     margin:20px;
@@ -151,6 +175,7 @@ section h2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-size: 0.9rem;
     
     
 }
@@ -173,10 +198,69 @@ section h2 {
     width: 100%;
 }
 
-@media screen and (max-width: 680px) {
-    
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .skills{
+        column-gap: 19%;
+    }
 
     .article section{
         flex-wrap: wrap;
+        column-gap: 20%;
+        row-gap: 20%;
+    } 
+    
+
+    .service{
+        font-size: 6px;
+    }
+
+    .footer{
+        font-size: 0.7rem;
     }
 }
+
+@media only screen and (min-width: 600px) {
+
+    
+
+    .service{
+        font-size: 8px;
+        line-height: 1rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) {
+    
+
+    .service{
+        font-size: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) {
+    /* .article section{
+        flex-wrap: wrap;
+    } */
+
+    .service{
+        font-size: 11px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200px) {
+    /* .article section{
+        flex-wrap: wrap;
+        
+    } */
+
+    .service{
+        font-size: 14px;
+    }
+}
+
