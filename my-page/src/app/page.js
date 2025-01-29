@@ -25,7 +25,7 @@ export default function Home() {
 
             <section className="section aboutme">
                 <div className="prof-pic">
-                    <Image src={profilepic} alt="profile" />
+                    <Image src={profilepic} alt="profile" width={150} height={150}/>
                 </div>
 
                 <div className="text">
@@ -66,7 +66,7 @@ export default function Home() {
                         <FontAwesomeIcon icon={faSketch} size="2x"/>
                         <h4>Website Redesigns</h4>
                         <span>
-                            {" "}
+                            
                             If your current website is outdated or
                             underperforming, I can give it a modern, responsive
                             makeover to improve both aesthetics and
