@@ -1,0 +1,266 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    background-color:rgb(124, 124, 124);
+    color: rgb(56, 50, 50);
+    
+}
+
+/* Header */
+
+/* main */
+
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* Section Styling */
+.section {
+    padding: 5rem 1.5rem;
+    margin: 50px;
+    width: 90%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* first sec */
+.prof-pic{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.prof-pic img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    filter: grayscale(70%);
+    clip-path: circle(60px at center);  
+}
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+/* second sec */
+
+.skills{
+    padding: auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills div{
+    margin: 0 auto;
+    display: inline;
+}
+
+/* third sec */
+
+.article{
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.article section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 20% 0;
+    height: max-content;
+}
+
+.service{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22.5%;
+    
+    column-gap: 20%;
+}
+
+.service span{
+    text-align: center;
+}
+
+
+
+
+
+/* forth Sec */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.contact a:link, a:visited{
+    color: rgb(52, 52, 52);
+    /* padding: 14px 25px; */
+    margin:0.1rem ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.contact p{
+    margin:20px;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 50px 0;
+}
+
+.btn{
+    border: 1px solid rgb(45, 45, 45); 
+    border-radius: 3rem;
+    padding: 1rem;
+
+}
+
+/* forth sec  >>  Footer */
+.footer {
+    /* text-align: center; */
+    margin:20px;
+    padding: 20px;
+    /* background-color: #333; */
+    color: rgb(78, 76, 76);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    
+    
+}
+
+.footer a:link, a:visited {
+    
+    color: rgb(52, 52, 52);
+    /* padding: 14px 25px; */
+    /* margin:0.5rem 10px 0.5rem 10px ; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.links {
+    font-size: 1rem;
+    margin: 10px 1.3rem;
+    margin: 0.5rem 10px 0.5rem 10px ;
+    /* display: inline-block; */
+    width: 100%;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .skills{
+        column-gap: 19%;
+    }
+
+    .article section{
+        flex-wrap: wrap;
+        column-gap: 20%;
+        row-gap: 20%;
+    } 
+    
+
+    .service{
+        font-size: 6px;
+    }
+
+    .footer{
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    
+
+    .service{
+        font-size: 8px;
+        line-height: 1rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) {
+    
+
+    .service{
+        font-size: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) {
+    /* .article section{
+        flex-wrap: wrap;
+    } */
+
+    .service{
+        font-size: 11px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200px) {
+    /* .article section{
+        flex-wrap: wrap;
+        
+    } */
+
+    .service{
+        font-size: 14px;
+    }
+}
+
