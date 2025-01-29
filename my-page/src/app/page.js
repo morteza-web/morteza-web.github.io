@@ -1,95 +1,128 @@
 import Image from "next/image";
+import profilepic from "../../public/profilepic2.jpg";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div class="main">
+        <header>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </header>
+
+        <section class="section aboutme">
+
+            <div class="prof-pic">
+                <Image src={profilepic} />
+            </div>
+
+            <div class="text">
+
+                <span>Unlock the Power of Exceptional Web Design with <b>Morteza</b> - Front-End Developer</span>
+                <a href="#contact"><button class="btn">contact</button></a>
+
+            </div>
+
+        </section>
+
+        <section class="section skills">
+
+
+            <i class="fa-brands fa-html5 fa-4x"></i>
+            <i class="fa-brands fa-css3 fa-4x"></i>
+            <i class="fa-brands fa-js fa-4x"></i>
+            <i class="fa-brands fa-react fa-4x"></i>
+            <i class="fa-brands fa-wordpress fa-4x"></i>
+            <i class="fa-brands fa-figma fa-4x"></i>
+
+
+
+        </section>
+
+        <section class="section article">
+            <h2>What I Can Do for You</h2>
+
+
+
+            <section>
+                <div class="service">
+                    <i class="fa-solid fa-code fa-2x"></i>
+                    <h4>Custom Websites</h4>
+                    <span>From simple landing pages to full-scale web applications, I create websites tailored to your
+                        vision and needs.</span>
+                </div>
+
+                <div class="service">
+                    <i class="fa-brands fa-sketch fa-2x"></i>
+                    <h4>Website Redesigns</h4>
+                    <span> If your current website is outdated or underperforming, I can give it a modern, responsive
+                        makeover to improve both aesthetics and functionality.</span>
+                </div>
+
+                
+
+                <div class="service">
+                    <i class="fa-solid fa-store fa-2x"></i>
+                    <h4>E-commerce Integration</h4>
+                    <span>I can set up and customize online stores using platforms like WordPress with WooCommerce or
+                        integrate e-commerce functionality into React applications.</span>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-info fa-2x"></i>
+                    <h4>Ongoing Support</h4>
+                    <span>I'm committed to providing ongoing support and maintenance for your website, ensuring it
+                        remains secure, up-to-date, and functional.</span>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="section contact" id="contact">
+            <i class="fa-solid fa-handshake fa-3x"></i>
+            <p>Tell me about your next project</p>
+            <div>
+                <a href="mailto:morteza.t.396@gmail.com">
+                    <button class="btn">
+                        <i class="fa-solid fa-envelope"></i>
+                        Email me
+                    </button>
+                </a>
+                
+                <a href="https://t.me/morteza_tnh" target="_blank">
+                    <button class="btn">
+                        <i class="fa-brands fa-telegram"></i>
+                        masssage me
+                    </button>
+                </a>
+
+            </div>
+
+            {/* <div class="contact-info">
+                <p>Phone: <a href="tel:+989370365494">09370365494</a></p>
+                <p>Telegram: <a href="https://t.me/morteza-tnh" target="_blank">morteza-tnh</a></p>
+                <p>Email: <a href="mailto:morteza.t.396@gmail.com">morteza.t.396@gmail.com</a></p>
+            </div> */}
+            <div class="footer">
+
+
+                <div><span>&copy; 2025 Morteza Tanhaei. All rights reserved.</span></div>
+
+                <div>
+                    <span><a href="https://t.me/morteza_tnh" target="_blank">Telegram</a></span>
+                    /
+                    <span><a href="mailto:morteza.t.396@gmail.com">Email</a></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        {/* <section>
+            <a href="first/test.html">link to test page</a>
+        </section> */}
+
+
     </div>
   );
 }
